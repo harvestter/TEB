@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(245,247,249);
 }
 
 header {
@@ -22,11 +23,106 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
 
 .pasek_linki {
-    width: 700px;
-    height: 25px;
-    background-color: greenyellow;
+    width: 800px;
+    height: 35px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 5px 0 8px;
+}
+
+header a {
+    line-height: 35px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header a:hover {
+    color: rgb(11,38,99);
+}
+
+section {
+    background-color:white;
+    max-width: 1240px;
+    height: 700px;
+    margin: auto;
+    margin-top: -50px;
+    box-shadow: #000000;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background-color: darkgreen;
+    width: 270px;
+    height: 80px;
+    background-image: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fotka {
+    width: 270px;
+    height: 240px;
+    background-image: url(/img/foto1.jpg);
+    background-repeat: no-repeat;
+}
+
+.logo_fotka {
+    width: 270px;
+    margin: 0 10px;
+}
+
+.logo2 {
+    background-color: red;
+}
+
+.fotka2 {
+    background-image: url(/img/foto2.jpg)
+}
+
+.logo3 {
+    background-color: blue;
+}
+
+.fotka3 {
+    background-image: url(/img/foto3.jpg)
+}
+
+@media (max-width: 900px) {
+
+    header {
+        height: 490px;
+        max-width: 900px;
+        margin: 0 auto;
+        background-image: url("/img/slider_991x420_umowa-zdalnie.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    header li {
+        display: block;
+        padding: 0 5px 0 10px;
+    }
+
+    .pasek_linki {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
