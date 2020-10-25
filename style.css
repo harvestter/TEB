@@ -2,3 +2,31 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    height: 490px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("/img/www_slider_1920x490_umowa_zdalnie.jpg");
+    background-position: center;
+}
+
+.pasek {
+    background-color: rgba(0, 0, 0, 0.25);
+    max-width: 1240px;
+    height: 100px;
+    margin: auto;
+    background-image: url(/img/logo-edu.png);
+    background-repeat: no-repeat;
+    background-position: left 10px bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.pasek_linki {
+    width: 700px;
+    height: 25px;
+    background-color: greenyellow;
+}
